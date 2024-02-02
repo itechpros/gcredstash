@@ -1,7 +1,7 @@
 from google.cloud import datastore
 
 
-class KeyStore(object):
+class KeyStore:
     CIPHER_PROPERTY_KEY = 'cipher'
 
     def __init__(self, project_id=None, namespace=None):

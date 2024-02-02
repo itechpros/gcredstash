@@ -1,7 +1,7 @@
 import os
 
 
-class Config(object):
+class Config:
     PROJECT_ID = os.environ.get('GCREDSTASH_GCP_PROJECT_ID')
     DEFAULT_KEY_RING_ID = os.environ.get('GCREDSTASH_DEFAULT_KEY_RING_ID')
     DEFAULT_LOCATION_ID = os.environ.get('GCREDSTASH_DEFAULT_LOCATION_ID') or "global"

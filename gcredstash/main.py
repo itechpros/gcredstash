@@ -10,9 +10,7 @@ from kms import GoogleKMS
 
 parser = argparse.ArgumentParser(description='A Credential Management Tool using Google Cloud KMS and Datastore')
 subparsers = parser.add_subparsers(dest='command',
-                                   help='Try commands like "{name} get -h" to get sub command\'s options'.format(
-                                       name=sys.argv[0])
-                                   )
+                                   help=f'Try commands like "{sys.argv[0]} get -h" to get sub command\'s options')
 create_key_ring_parser = subparsers.add_parser('create-keyring',
                                                help="Creates a KeyRing in the given location (e.g. global)")
 create_key_ring_parser.add_argument('new_keyring_id', type=str, help='Unique id for new KeyRing creation in location')

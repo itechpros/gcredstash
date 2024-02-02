@@ -3,7 +3,7 @@ import base64
 import logging
 
 
-class GoogleKMS(object):
+class GoogleKMS:
     PARENT_URI = 'projects/{project_id}/locations/{location_id}'
     KEY_RING_URI = PARENT_URI + '/keyRings/{key_ring_id}'
     KEY_URI = KEY_RING_URI + '/cryptoKeys/{key_id}'
@@ -122,7 +122,7 @@ class GoogleKMS(object):
         :return:
         """
 
-        if type(credentials) != dict:
+        if not isinstance(credentials, dict):
             raise ValueError("credentials should be a dictionary of credential name and value")
 
         for name, value in credentials.items():
