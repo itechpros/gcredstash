@@ -27,7 +27,7 @@ jobs:
       - name: Build executable
         run: poetry run pyinstaller --paths gcredstash --onefile gcredstash\main.py
       - name: Rename built executable
-        run: move gcredstash\main.exe gcredstash.exe
+        run: move dist\main.exe gcredstash.exe
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
