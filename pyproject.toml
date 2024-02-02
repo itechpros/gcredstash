@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "gcredstash"
+version = "2.0.0"
+description = "A Credential Management Tool using Google Cloud KMS and Datastore"
+authors = ["Paul Bromwell <paul@itechpros.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+google-api-python-client = "^2.116.0"
+google-cloud-datastore = "^2.19.0"
+google-auth-httplib2 = "^0.2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.0.3"
+flake8 = "^7.0.0"
+mypy = "^1.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
