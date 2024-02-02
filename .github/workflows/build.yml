@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: '3.11'
       - name: Install Poetry
-        run: pip install poetry
+        run: pip install poetry==1.2.2
       - name: Install dependencies
         run: poetry install --dev
       - name: Build executable
