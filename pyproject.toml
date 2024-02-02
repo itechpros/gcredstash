@@ -6,7 +6,7 @@ authors = ["Paul Bromwell <paul@itechpros.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "3.11.*"
 google-api-python-client = "^2.116.0"
 google-cloud-datastore = "^2.19.0"
 google-auth-httplib2 = "^0.2.0"
@@ -16,6 +16,7 @@ google-auth-httplib2 = "^0.2.0"
 pylint = "^3.0.3"
 flake8 = "^7.0.0"
 mypy = "^1.8.0"
+pyinstaller = "^6.3.0"
 
 [build-system]
 requires = ["poetry-core"]
